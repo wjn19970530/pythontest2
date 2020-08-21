@@ -1,4 +1,4 @@
-.env
+conf/.env
 reports/*
 __pycache__/*
 *.pyc

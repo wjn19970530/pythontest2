@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/account/GET_verify-code.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/auth/POST_login.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/demo_api.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/demo_api.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/account/GET_verify-code.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/account/GET_verify-code.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/demo_testcase.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/demo_testcase.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +35,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testcases" />
+    <property name="last_opened_file_path" value="D:/Autotest-saas/saasAPI" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\APIdemo\pythontest2\APIdemo\conf" />
+      <recent name="D:\APIdemo\pythontest2\APIdemo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\APIdemo\pythontest2\APIdemo\testcases" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\auth" />
@@ -111,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597974327318</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1597981563845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597981563845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
