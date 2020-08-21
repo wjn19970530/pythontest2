@@ -1,0 +1,14 @@
+name: 获取验证码 /api/account/GET_verify_code.yml
+variables:
+    phoneNum: null
+base_url: ${ENV(base_url)}
+request:
+    url: /uaaaccount/api/account/verify-code
+    method: GET
+    headers:
+        end-point: pc-web
+    params:
+        phoneNum: ${ENV(phoneNum)}
+
+validate:
+    - eq: ["status_code", 200]

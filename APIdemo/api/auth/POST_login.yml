@@ -1,0 +1,23 @@
+name: 用户登录 api/auth/POST_login.yml
+variables:
+    endpoint: null
+    grantType: null
+    phoneNum: null
+    productCode: null
+    transactionNo: null
+    verifyCode: null
+base_url: ${ENV(base_url)}
+request:
+    json:
+        endpoint: ${ENV(endpoint)}
+        grantType: ${ENV(grantType)}
+        phoneNum: ${ENV(phoneNum)}
+        productCode: ${ENV(productCode)}
+        transactionNo: ${ENV(transactionNo)}
+        verifyCode: ${ENV(verifyCode)}
+    url: /auth/login
+    method: POST
+    headers:
+        Content-Type: application/json;charset=UTF-8
+validate:
+    - eq: ["status_code", 200]
