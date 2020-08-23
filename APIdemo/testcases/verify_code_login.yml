@@ -18,8 +18,6 @@ teststeps:
         productCode: ${ENV(productCode)}
         transactionNo: ${ENV(transactionNo)}
         verifyCode: ${ENV(verifyCode)}
-    extract:
-        accesstoken: content.access_token
     validate:
         - eq: ["status_code", 200]
 

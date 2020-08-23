@@ -15,8 +15,8 @@ request:
         productCode: ${ENV(productCode)}
         transactionNo: ${ENV(transactionNo)}
         verifyCode: ${ENV(verifyCode)}
-    url: /auth/login
     method: POST
+    url: /auth/login
     headers:
         Content-Type: application/json;charset=UTF-8
 validate:
