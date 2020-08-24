@@ -1,0 +1,22 @@
+name: 获取商品列表以获取相关id api/mall/back-end/GET_car-items.yml
+variables:
+  status: null
+  page: null
+  size: null
+  keyword: null
+base_url: ${ENV(base_url)}
+request:
+    url: /mall/api/v0.1/back-end/car-items
+    method: GET
+    headers:
+        authorization: Bearer 5c85adb0-5ea2-4238-9356-82292e9fc0a3
+        end-point: pc-web
+    params:
+        status: 2
+        page: 0
+        size: 20
+        keyword: 通用品牌车系车型一号
+extract:
+    - itemId: content.0.id
+validate:
+    - eq: ["status_code", 200]

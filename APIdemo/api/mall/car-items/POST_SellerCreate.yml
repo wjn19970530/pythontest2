@@ -15,7 +15,7 @@ request:
     json:
         itemId: ${ENV(itemId)}
         leasePlanId: ${ENV(leasePlanId)}
-        phone: ${ENV(phone)}
+        phone: ${ENV(createphone)}
         sellerId: ${ENV(sellerId)}
         skuId: ${ENV(skuId)}
     method: POST

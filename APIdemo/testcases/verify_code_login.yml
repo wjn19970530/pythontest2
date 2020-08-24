@@ -18,7 +18,6 @@ teststeps:
         verifyCode: ${ENV(verifyCode)}
     validate:
         - eq: ["status_code", 200]
-
 -   name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
     api: api/mall/car-items/POST_SellerCreate.yml
     variables:
