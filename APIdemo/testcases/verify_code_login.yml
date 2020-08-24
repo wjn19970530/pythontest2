@@ -1,15 +1,13 @@
 config:
     name: web端验证码登录 testcase/verify_code_login.yml
-
 teststeps:
 -   name: 获取验证码 api/account/GET_verify-code.yml
     api: api/account/GET_verify-code.yml
     variables:
         phoneNum: ${ENV(phoneNum)}
     validate:
-        - eq: [status_code, 200]
--
-    name: 用户登录 api/auth/POST_login.yml
+        - eq: ["status_code", 200]
+-   name: 用户登录 api/auth/POST_login.yml
     api: api/auth/POST_login.yml
     variables:
         endpoint: ${ENV(endpoint)}
@@ -21,3 +19,14 @@ teststeps:
     validate:
         - eq: ["status_code", 200]
 
+-   name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
+    api: api/mall/car-items/POST_SellerCreate.yml
+    variables:
+        endpoint: ${ENV(endpoint)}
+        grantType: ${ENV(grantType)}
+        phone: ${ENV(phone)}
+        productCode: ${ENV(productCode)}
+        transactionNo: ${ENV(transactionNo)}
+        verifyCode: ${ENV(verifyCode)}
+    validate:
+        - eq: ["status_code", 200]

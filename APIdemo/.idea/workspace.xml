@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
+    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/account/GET_verify-code.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/account/GET_verify-code.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/auth/POST_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth/POST_login.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/.env" beforeDir="false" afterPath="$PROJECT_DIR$/conf/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +43,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/Autotest-saas/saasAPI" />
   </component>
@@ -129,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597982520164</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <created>1597982978968</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597982978968</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +159,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>

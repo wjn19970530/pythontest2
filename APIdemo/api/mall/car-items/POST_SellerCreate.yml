@@ -1,25 +1,24 @@
-name: 创建订单 /mall/api/v0.1/car-items/orders/seller-create
+name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
 variables:
-    access_token: ${get_token(access_token)}
-    refresh_token: ${get_token(refresh_token)}
-    phoneNum: ${ENV(phoneNum)}
-    sellerPhoneNum: ${ENV(sellerPhoneNum)}
-    itemId: "8"
-    leasePlanId: "18"
-    sellerId: ${get_value_from_tmp(sellerId)}
-    skuId: "1914"
+    access_token: ${access_token}
+    refresh_token: ${refresh_token}
+    phone: null
+    sellerPhoneNum: null
+    itemId: null
+    leasePlanId: null
+    sellerId: null
+    skuId: null
 base_url: ${ENV(base_url)}
 request:
     headers:
         authorization: Bearer ${access_token}
-        user_id: $sellerId
     json:
-        itemId: ${itemId}
-        leasePlanId: ${leasePlanId}
-        phone: $phoneNum
-        sellerId: ${sellerId}
-        skuId: ${skuId}
+        itemId: ${ENV(itemId)}
+        leasePlanId: ${ENV(leasePlanId)}
+        phone: ${ENV(phone)}
+        sellerId: ${ENV(sellerId)}
+        skuId: ${ENV(skuId)}
     method: POST
     url: /mall/api/v0.1/car-items/orders/seller-create
 validate:
--   eq: [status_code, 200]
+-   eq: ["status_code", 200]
