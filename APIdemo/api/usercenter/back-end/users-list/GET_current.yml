@@ -1,4 +1,4 @@
-name: 获取商品列表以获取相关id api/mall/back-end/GET_current.yml
+name: 获取个人客户列表以获取相关id api/usercenter/back-end/users-list/GET_current.yml
 variables:
   status: null
   page: null

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="" />
+    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/usercenter/back-end/users-list/GET_current.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/usercenter/back-end/users-list/GET_current.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598264462502</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <created>1598264470159</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598264470159</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1598264628601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598264628601</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
