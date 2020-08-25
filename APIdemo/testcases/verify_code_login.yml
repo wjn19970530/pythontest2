@@ -39,14 +39,25 @@ teststeps:
         - createPhone: content.0.user.phoneNum
     validate:
         - eq: ["status_code", 200]
-
+-   name: 获取商品相关skuId api/mall/back-end/car-item/GET_tree.yml
+    api: api/mall/back-end/car-item/GET_tree.yml
+    variables:
+        itemId: $itemId
+    validate:
+        - eq: ["status_code", 200]
+-   name: 获取金融方案id  api/mall/back-end/car-lease-plans/item/GET_ItemId.yml
+    api: api/mall/back-end/car-lease-plans/item/GET_ItemId.yml
+    variables:
+        itemId: $itemId
+    validate:
+        - eq: ["status_code", 200]
 -   name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
     api: api/mall/car-items/POST_SellerCreate.yml
     variables:
         itemId: $itemId
-        leasePlanId: ${ENV(leasePlanId)}
+        leasePlanId: $leasePlanId
         phone: $createPhone
-        sellerId: ${ENV(sellerId)}
-        skuId: ${ENV(skuId)}
+#        sellerId: ${ENV(sellerId)}
+        skuId: $skuId
     validate:
         - eq: ["status_code", 200]

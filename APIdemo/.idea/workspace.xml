@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" afterDir="false" />
+    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="获取商品相关skuId">
+      <change afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/usercenter/back-end/users-list/GET_current.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/usercenter/back-end/users-list/POST_current.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/.env" beforeDir="false" afterPath="$PROJECT_DIR$/conf/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
     </list>
@@ -44,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/mall/back-end/car-lease-plans" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -53,11 +52,11 @@
       <recent name="D:\APIdemo\pythontest2\APIdemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-lease-plans" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-item" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\usercenter" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end" />
-      <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-items" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598264906550</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="获取商品相关skuId">
+      <created>1598341035118</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598341035118</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -216,6 +222,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="获取个人客户列表未编写完全" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取个人客户列表未编写完全" />
+    <MESSAGE value="获取商品相关skuId" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取商品相关skuId" />
   </component>
 </project>

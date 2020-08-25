@@ -1,0 +1,13 @@
+name: 获取金融方案id  api/mall/back-end/car-lease-plans/item/GET_ItemId.yml
+variables:
+    itemId: null
+base_url: ${ENV(base_url)}
+request:
+    url: /mall/api/v0.1/back-end/car-lease-plans/item/${ENV(itemId)}/fliter
+    method: GET
+    headers:
+        authorization: Bearer ${access_token}
+extract:
+    - leasePlanId: content.0.carLeaseContractSuites.0.leasePlanId
+validate:
+  - eq: [status_code,200]
