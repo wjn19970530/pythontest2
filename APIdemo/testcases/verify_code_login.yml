@@ -1,5 +1,8 @@
 config:
     name: web端验证码登录 testcase/verify_code_login.yml
+    variables:
+        realName: 王二
+        keyword: 通用品牌车系车型一号
 teststeps:
 -   name: 获取验证码 api/account/GET_verify-code.yml
     api: api/account/GET_verify-code.yml
@@ -18,14 +21,32 @@ teststeps:
         verifyCode: ${ENV(verifyCode)}
     validate:
         - eq: ["status_code", 200]
+-   name: 获取商品列表以获取相关id api/mall/back-end/GET_car-items.yml
+    api: api/mall/back-end/GET_car-items.yml
+    variables:
+        status: 2
+        page: 0
+        size: 20
+        keyword: $keyword
+    validate:
+        - eq: ["status_code", 200]
+-   name: 选择个人客户 api/usercenter/back-end/users-list/POST_current.yml
+    api: api/usercenter/back-end/users-list/POST_current.yml
+    variables:
+        creditFlag: 1
+        realName: $realName
+    extract:
+        - createPhone: content.0.user.phoneNum
+    validate:
+        - eq: ["status_code", 200]
+
 -   name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
     api: api/mall/car-items/POST_SellerCreate.yml
     variables:
-        endpoint: ${ENV(endpoint)}
-        grantType: ${ENV(grantType)}
-        phone: ${ENV(phone)}
-        productCode: ${ENV(productCode)}
-        transactionNo: ${ENV(transactionNo)}
-        verifyCode: ${ENV(verifyCode)}
+        itemId: $itemId
+        leasePlanId: ${ENV(leasePlanId)}
+        phone: $createPhone
+        sellerId: ${ENV(sellerId)}
+        skuId: ${ENV(skuId)}
     validate:
         - eq: ["status_code", 200]

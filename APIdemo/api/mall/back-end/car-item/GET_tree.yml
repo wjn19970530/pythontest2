@@ -1,0 +1,16 @@
+name: 获取商品相关skuId api/mall/back-end/car-item/GET_tree.yml
+variables:
+    itemId: null
+base_url: ${ENV(base_url)}
+request:
+    url: /mall/api/v0.1/back-end/car-item/tree/${ENV(itemId)}
+    method: GET
+    headers:
+        authorization: Bearer 0ae06bac-792e-42bc-9494-ae527d732ff4
+    params:
+        itemId: ${ENV(itemId)}
+extract:
+#    - leasePlanId: content.0.carLeaseContractSuites.leasePlanId
+    - skuId: content.0.children.0.children.0.sku.skuId
+validate:
+    - eq: ["status_code", 200]

@@ -9,14 +9,15 @@ request:
     url: /mall/api/v0.1/back-end/car-items
     method: GET
     headers:
-        authorization: Bearer 5c85adb0-5ea2-4238-9356-82292e9fc0a3
-        end-point: pc-web
+        authorization: Bearer ${access_token}
     params:
         status: 2
         page: 0
         size: 20
-        keyword: 通用品牌车系车型一号
+        keyword: ${ENV(keyword)}
 extract:
     - itemId: content.0.id
+#    - leasePlanId: content.0.carLeaseContractSuites.leasePlanId
+#    - skuId: content.0.children.0.children.0.sku.skuId
 validate:
     - eq: ["status_code", 200]
