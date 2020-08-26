@@ -13,11 +13,11 @@ request:
     headers:
         authorization: Bearer ${access_token}
     json:
-        itemId: ${ENV(itemId)}
-        leasePlanId: ${ENV(leasePlanId)}
-        phone: ${ENV(createphone)}
+        itemId: $itemId
+        leasePlanId: $leasePlanId
+        phone: $createPhone
         sellerId: ${ENV(sellerId)}
-        skuId: ${ENV(skuId)}
+        skuId: $skuId
     method: POST
     url: /mall/api/v0.1/car-items/orders/seller-create
 extract:

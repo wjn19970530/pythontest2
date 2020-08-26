@@ -6,7 +6,7 @@ request:
     url: /mall/api/v0.1/back-end/car-item/tree/${ENV(itemId)}
     method: GET
     headers:
-        authorization: Bearer ${access_token}
+        authorization: Bearer cb6f9acc-b647-494a-9e73-8322609ca2aa
     params:
         itemId: ${ENV(itemId)}
 extract:

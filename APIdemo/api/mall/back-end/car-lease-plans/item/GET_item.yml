@@ -6,6 +6,6 @@ request:
     url: /mall/api/v0.1/back-end/car-lease-plans/item/${ENV(itemId)}/fliter
     method: GET
     headers:
-        authorization: Bearer 0ae06bac-792e-42bc-9494-ae527d732ff4
+        authorization: Bearer ${access_token}
 validate:
   - eq: [status_code,200]

@@ -17,7 +17,5 @@ request:
         keyword: ${ENV(keyword)}
 extract:
     - itemId: content.0.id
-#    - leasePlanId: content.0.carLeaseContractSuites.leasePlanId
-#    - skuId: content.0.children.0.children.0.sku.skuId
 validate:
     - eq: ["status_code", 200]
