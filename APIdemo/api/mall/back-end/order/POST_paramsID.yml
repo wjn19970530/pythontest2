@@ -1,0 +1,14 @@
+name: 校验订单是否创建成功 api/mall/back-end/order/POST_paramsID.yml
+variables:
+    page: 0
+base_url: ${ENV(base_url)}
+request:
+    json:
+        page: ${ENV(page)}
+    method: POST
+    url: /mall/api/v0.1/back-end/orders/params?
+    headers:
+        authorization: Bearer ${access_token}
+validate:
+    - eq: ["status_code", 200]
+    - eq: [content.0.order.id, $orderId]

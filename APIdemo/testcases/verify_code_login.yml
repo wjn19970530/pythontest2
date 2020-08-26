@@ -61,3 +61,10 @@ teststeps:
         skuId: $skuId
     validate:
         - eq: ["status_code", 200]
+-   name: 校验订单是否创建成功 api/mall/back-end/order/POST_paramsID.yml
+    api: api/mall/back-end/order/POST_paramsID.yml
+    variables:
+        page: 0
+    validate:
+        - eq: ["status_code", 200]
+        - eq: [content.0.order.id, $orderId]

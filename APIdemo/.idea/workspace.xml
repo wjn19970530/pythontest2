@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="获取商品相关skuId">
-      <change afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" afterDir="false" />
+    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="成功支持下单，需添加订单列表查询，判断是否添加成功">
+      <change afterPath="$PROJECT_DIR$/api/mall/back-end/order/POST_params.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/mall/back-end/order/POST_paramsID.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/.env" beforeDir="false" afterPath="$PROJECT_DIR$/conf/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
     </list>
@@ -43,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/mall/back-end/car-lease-plans" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/mall/back-end/order" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -52,11 +53,11 @@
       <recent name="D:\APIdemo\pythontest2\APIdemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\order" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-lease-plans" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-item" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\usercenter" />
-      <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598341035118</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="成功支持下单，需添加订单列表查询，判断是否添加成功">
+      <created>1598343839822</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598343839822</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -223,6 +231,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="获取个人客户列表未编写完全" />
     <MESSAGE value="获取商品相关skuId" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取商品相关skuId" />
+    <MESSAGE value="成功支持下单，需添加订单列表查询，判断是否添加成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="成功支持下单，需添加订单列表查询，判断是否添加成功" />
   </component>
 </project>

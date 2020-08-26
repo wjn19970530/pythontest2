@@ -20,5 +20,7 @@ request:
         skuId: ${ENV(skuId)}
     method: POST
     url: /mall/api/v0.1/car-items/orders/seller-create
+extract:
+    - orderId: content.orderId
 validate:
 -   eq: ["status_code", 200]
