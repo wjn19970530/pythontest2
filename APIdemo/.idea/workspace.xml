@@ -3,11 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/auth/POST_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth/POST_login.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/order/POST_paramsID.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/order/POST_paramsID.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/usercenter/back-end/users-list/POST_current.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/usercenter/back-end/users-list/POST_current.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/.env" beforeDir="false" afterPath="$PROJECT_DIR$/conf/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +35,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
+        <entry key="$PROJECT_DIR$/.." value="下单" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -95,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
@@ -208,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598436002571</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加订单下单成功校验">
+      <created>1598439273090</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1598439273090</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

@@ -1,27 +1,19 @@
 name: 用户登录 api/auth/POST_login.yml
 variables:
-    endpoint: null
-    grantType: null
+    endpoint: pc-web
+    grantType: verify_code
+    verifyCode: 999999
     phoneNum: null
-    productCode: null
-    transactionNo: null
-    verifyCode: null
 base_url: ${ENV(base_url)}
 request:
     json:
-        endpoint: ${ENV(endpoint)}
-        grantType: ${ENV(grantType)}
+        endpoint: $endpoint
+        grantType: $grantType
         phoneNum: ${ENV(phoneNum)}
-        productCode: ${ENV(productCode)}
-        transactionNo: ${ENV(transactionNo)}
-        verifyCode: ${ENV(verifyCode)}
+        verifyCode: $verifyCode
     method: POST
     url: /auth/login
     headers:
         Content-Type: application/json;charset=UTF-8
-extract:
-    - access_token: content.access_token
-    - refresh_token: content.refresh_token
-
 validate:
     - eq: ["status_code", 200]

@@ -14,8 +14,6 @@ request:
         status: 2
         page: 0
         size: 20
-        keyword: ${ENV(keyword)}
-extract:
-    - itemId: content.0.id
+        keyword: $keyword
 validate:
     - eq: ["status_code", 200]

@@ -13,8 +13,6 @@ request:
         size: 20
     json:
         creditFlag: 1
-        realName: ${ENV(realName)}
-extract:
-    - createPhone: content.0.user.phoneNum
+        realName: $realName
 validate:
     - eq: ["status_code", 200]

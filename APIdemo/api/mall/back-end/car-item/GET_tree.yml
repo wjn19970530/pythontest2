@@ -3,13 +3,11 @@ variables:
     itemId: null
 base_url: ${ENV(base_url)}
 request:
-    url: /mall/api/v0.1/back-end/car-item/tree/${ENV(itemId)}
+    url: /mall/api/v0.1/back-end/car-item/tree/$itemId
     method: GET
     headers:
-        authorization: Bearer cb6f9acc-b647-494a-9e73-8322609ca2aa
+        authorization: Bearer ${access_token}
     params:
-        itemId: ${ENV(itemId)}
-extract:
-    - skuId: content.0.children.0.children.0.sku.skuId
+        itemId: $itemId
 validate:
     - eq: ["status_code", 200]

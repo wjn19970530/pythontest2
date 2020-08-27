@@ -16,7 +16,7 @@ request:
         itemId: $itemId
         leasePlanId: $leasePlanId
         phone: $createPhone
-        sellerId: ${ENV(sellerId)}
+        sellerId: $sellerId
         skuId: $skuId
     method: POST
     url: /mall/api/v0.1/car-items/orders/seller-create
