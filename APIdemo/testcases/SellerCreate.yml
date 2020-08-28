@@ -1,0 +1,60 @@
+config:
+    name: 创建待售车辆订单 testcases/SellerCreate.yml
+    variables:
+        realName: 王二
+        keyword: 通用品牌车系车型一号
+teststeps:
+-   name: 获取商品列表以获取相关id api/mall/back-end/GET_car-items.yml
+    api: api/mall/back-end/GET_car-items.yml
+    variables:
+        status: 2
+        page: 0
+        size: 20
+        keyword: $keyword
+    extract:
+        - itemId: content.0.id
+    validate:
+        - eq: ["status_code", 200]
+-   name: 选择个人客户 api/usercenter/back-end/users-list/POST_current.yml
+    api: api/usercenter/back-end/users-list/POST_current.yml
+    variables:
+        creditFlag: 1
+        realName: $realName
+    extract:
+        - createPhone: content.0.user.phoneNum
+        - sellerId: content.0.user.sellerId
+    validate:
+        - eq: ["status_code", 200]
+-   name: 获取商品相关skuId api/mall/back-end/car-item/GET_tree.yml
+    api: api/mall/back-end/car-item/GET_tree.yml
+    variables:
+        itemId: $itemId
+    extract:
+      - skuId: content.0.children.0.children.0.sku.skuId
+    validate:
+        - eq: ["status_code", 200]
+-   name: 获取金融方案id  api/mall/back-end/car-lease-plans/item/GET_ItemId.yml
+    api: api/mall/back-end/car-lease-plans/item/GET_ItemId.yml
+    variables:
+        itemId: $itemId
+    extract:
+      - leasePlanId: content.0.carLeaseContractSuites.0.leasePlanId
+    validate:
+        - eq: ["status_code", 200]
+-   name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
+    api: api/mall/car-items/POST_SellerCreate.yml
+    variables:
+        itemId: $itemId
+        leasePlanId: $leasePlanId
+        phone: $createPhone
+        sellerId: $sellerId
+        skuId: $skuId
+    validate:
+        - eq: ["status_code", 200]
+-   name: 校验订单是否创建成功 api/mall/back-end/order/POST_paramsID.yml
+    api: api/mall/back-end/order/POST_paramsID.yml
+    variables:
+        page: 0
+    validate:
+        - eq: ["status_code", 200]
+        - eq: [content.0.order.id, $orderId]

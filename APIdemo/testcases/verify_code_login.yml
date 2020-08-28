@@ -13,10 +13,8 @@ teststeps:
 -   name: 用户登录 api/auth/POST_login.yml
     api: api/auth/POST_login.yml
     variables:
-        endpoint: $endpoint
-        grantType: $grantType
+        endpoint: pc-web
         phoneNum: ${ENV(phoneNum)}
-        verifyCode: $verifyCode
     extract:
         - access_token: content.access_token
         - refresh_token: content.refresh_token
@@ -65,7 +63,7 @@ teststeps:
 #        itemId: $itemId
 #        leasePlanId: $leasePlanId
 #        phone: $createPhone
-##        sellerId: ${ENV(sellerId)}
+#        sellerId: $sellerId
 #        skuId: $skuId
 #    validate:
 #        - eq: ["status_code", 200]

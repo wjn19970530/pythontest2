@@ -1,7 +1,7 @@
 config:
-    name: "用户登录并下单" testsuites/order.yml
-
+    name: 用户登录并下单 testsuites/order.yml
 testcases:
--
-    name: web端验证码登录 testcase/verify_code_login.yml
-    testcase: testcases\verify_code_login.yml
+-   name: web端验证码登录 testcases/verify_code_login.yml
+    testcase: testcases/verify_code_login.yml
+-   name: 创建待售车辆订单 testcases/SellerCreate.yml
+    testcase: testcases/SellerCreate.yml

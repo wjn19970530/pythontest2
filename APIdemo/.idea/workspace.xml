@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="">
+    <list default="true" id="a2914c60-67f6-4444-a789-a8334d8b9ca7" name="Default Changelist" comment="添加订单下单成功校验">
+      <change afterPath="$PROJECT_DIR$/testcases/SellerCreate.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/auth/POST_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth/POST_login.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/GET_car-items.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-item/GET_tree.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_ItemId.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/back-end/order/POST_paramsID.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/order/POST_paramsID.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/car-items/POST_SellerCreate.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/usercenter/back-end/users-list/POST_current.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/usercenter/back-end/users-list/POST_current.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/car-lease-plans/item/GET_item.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mall/back-end/order/POST_params.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/mall/back-end/order/POST_params.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/.env" beforeDir="false" afterPath="$PROJECT_DIR$/conf/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/verify_code_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/verify_code_login.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/order.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/order.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/mall/back-end/order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testcases" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -56,11 +54,11 @@
       <recent name="D:\APIdemo\pythontest2\APIdemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\APIdemo\pythontest2\APIdemo\testcases" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\order" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-lease-plans" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api" />
       <recent name="D:\APIdemo\pythontest2\APIdemo\api\mall\back-end\car-item" />
-      <recent name="D:\APIdemo\pythontest2\APIdemo\api\usercenter" />
     </key>
   </component>
   <component name="RunDashboard">

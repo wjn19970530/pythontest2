@@ -1,58 +1,57 @@
-name: 后台订单列表查询    api/mall/back-end/orders/POST_Params1.yml
-variables:
-    access_token: ${get_token(access_token)}
-    tradeNo: "" #订单编号
-    orderStatus: "" #订单主状态
-    orderType: "" #支付类型，定金或提车款
-    carName: "" #车辆名称，即订单名称
-    userName: ""  #客户名称
-    phoneNum: ""  #客户手机号
-    sellerName: ""  #业务员
-    channelName: "" #渠道名称
-    businessType: ""  #业务类型 0:直租 1:回租 2:经租
-    carSaleCategory: "" #新旧车,1|新车，0|二手车
-    natureUsage: "" #使用性质 0 非营运 1：营运-网约车
-    carLicenseNumber: ""  #车牌号
-    monthlySupplyType: "" #月供前后置 1：前置，2：后置
-    payType: "" #支付类型，1：线上支付。2：线下支付
-    payMoneyFrom: ""  #订单最低已支付金额
-    payMoneyTo: ""  #订单最高已支付金额
-    timeType: ""  #时间类型
-    beginTime: "" #开始时间
-    endTime: ""  #结束时间
-    capitalId: "" #放贷机构
-    organizationsId: "" #渠道ID
-    orderBy: "" #排序方式，0按订单生成时间排序，1按订单最后支付时间排序，默认按订单生成时间排序
-base_url: ${ENV(base_url)}
-request:
-    headers:
-      Authorization: Bearer $access_token
-    json:
-      page: 0
-      tradeNo: ${tradeNo}
-      orderStatus: ${orderStatus}
-      carName: ${carName}
-      userName: ${userName}
-      phoneNum: ${phoneNum}
-      sellerName: ${sellerName}
-      channelName: ${channelName}
-      businessType: ${businessType}
-      carSaleCategory: ${carSaleCategory}
-      natureUsage: ${natureUsage}
-      carLicenseNumber: ${carLicenseNumber}
-      monthlySupplyType: ${monthlySupplyType}
-      orderType: ${orderType}
-      payType: ${payType}
-      payMoneyFrom: ${payMoneyFrom}
-      payMoneyTo: ${payMoneyTo}
-      timeType: ${timeType}
-      beginTime: ${beginTime}
-      endTime: ${endTime}
-      capitalId: ${capitalId}
-      organizationsId: ${organizationsId}
-      orderBy: ${orderBy}
-      organizationsId: ${organizationsId}
-    method: POST
-    url: /mall/api/v0.1/back-end/orders/params?
-validate:
-  - eq: [status_code,200]
+#name: 后台订单列表查询    api/mall/back-end/orders/POST_Params1.yml
+#variables:
+#    access_token: ${get_token(access_token)}
+#    tradeNo: "" #订单编号
+#    orderStatus: "" #订单主状态
+#    orderType: "" #支付类型，定金或提车款
+#    carName: "" #车辆名称，即订单名称
+#    userName: ""  #客户名称
+#    phoneNum: ""  #客户手机号
+#    sellerName: ""  #业务员
+#    channelName: "" #渠道名称
+#    businessType: ""  #业务类型 0:直租 1:回租 2:经租
+#    carSaleCategory: "" #新旧车,1|新车，0|二手车
+#    natureUsage: "" #使用性质 0 非营运 1：营运-网约车
+#    carLicenseNumber: ""  #车牌号
+#    monthlySupplyType: "" #月供前后置 1：前置，2：后置
+#    payType: "" #支付类型，1：线上支付。2：线下支付
+#    payMoneyFrom: ""  #订单最低已支付金额
+#    payMoneyTo: ""  #订单最高已支付金额
+#    timeType: ""  #时间类型
+#    beginTime: "" #开始时间
+#    endTime: ""  #结束时间
+#    capitalId: "" #放贷机构
+#    organizationsId: "" #渠道ID
+#    orderBy: "" #排序方式，0按订单生成时间排序，1按订单最后支付时间排序，默认按订单生成时间排序
+#base_url: ${ENV(base_url)}
+#request:
+#    headers:
+#      Authorization: Bearer $access_token
+#    json:
+#      page: 0
+#      tradeNo: ${tradeNo}
+#      orderStatus: ${orderStatus}
+#      carName: ${carName}
+#      userName: ${userName}
+#      phoneNum: ${phoneNum}
+#      sellerName: ${sellerName}
+#      channelName: ${channelName}
+#      businessType: ${businessType}
+#      carSaleCategory: ${carSaleCategory}
+#      natureUsage: ${natureUsage}
+#      carLicenseNumber: ${carLicenseNumber}
+#      monthlySupplyType: ${monthlySupplyType}
+#      orderType: ${orderType}
+#      payType: ${payType}
+#      payMoneyFrom: ${payMoneyFrom}
+#      payMoneyTo: ${payMoneyTo}
+#      timeType: ${timeType}
+#      beginTime: ${beginTime}
+#      endTime: ${endTime}
+#      capitalId: ${capitalId}
+#      orderBy: ${orderBy}
+#      organizationsId: ${organizationsId}
+#    method: POST
+#    url: /mall/api/v0.1/back-end/orders/params?
+#validate:
+#  - eq: [status_code,200]

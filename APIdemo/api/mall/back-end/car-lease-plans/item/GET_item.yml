@@ -1,11 +1,11 @@
-name: 获取金融方案信息  api/mall/back-end/car-lease-plans/item/GET_item.yml
-variables:
-    itemId: null
-base_url: ${ENV(base_url)}
-request:
-    url: /mall/api/v0.1/back-end/car-lease-plans/item/${ENV(itemId)}/fliter
-    method: GET
-    headers:
-        authorization: Bearer ${access_token}
-validate:
-  - eq: [status_code,200]
+#name: 获取金融方案信息  api/mall/back-end/car-lease-plans/item/GET_item.yml
+#variables:
+#    itemId: null
+#base_url: ${ENV(base_url)}
+#request:
+#    url: /mall/api/v0.1/back-end/car-lease-plans/item/${ENV(itemId)}/fliter
+#    method: GET
+#    headers:
+#        authorization: Bearer ${access_token}
+#validate:
+#  - eq: [status_code,200]
