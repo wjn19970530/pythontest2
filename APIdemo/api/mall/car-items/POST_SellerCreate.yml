@@ -1,7 +1,6 @@
 name: 创建订单 api/mall/car-items/POST_SellerCreate.yml
 variables:
     access_token: ${access_token}
-    refresh_token: ${refresh_token}
     phone: null
     sellerPhoneNum: null
     itemId: null

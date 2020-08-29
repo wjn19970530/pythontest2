@@ -15,11 +15,10 @@ teststeps:
     variables:
         endpoint: pc-web
         phoneNum: ${ENV(phoneNum)}
-    extract:
-        - access_token: content.access_token
-        - refresh_token: content.refresh_token
     validate:
         - eq: ["status_code", 200]
+    teardown_hooks:
+        - ${get_token_write($response)}
 #-   name: 获取商品列表以获取相关id api/mall/back-end/GET_car-items.yml
 #    api: api/mall/back-end/GET_car-items.yml
 #    variables:
@@ -31,6 +30,7 @@ teststeps:
 #        - itemId: content.0.id
 #    validate:
 #        - eq: ["status_code", 200]
+#
 #-   name: 选择个人客户 api/usercenter/back-end/users-list/POST_current.yml
 #    api: api/usercenter/back-end/users-list/POST_current.yml
 #    variables:

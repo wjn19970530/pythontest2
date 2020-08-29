@@ -3,5 +3,6 @@ config:
 testcases:
 -   name: web端验证码登录 testcases/verify_code_login.yml
     testcase: testcases/verify_code_login.yml
+
 -   name: 创建待售车辆订单 testcases/SellerCreate.yml
     testcase: testcases/SellerCreate.yml
